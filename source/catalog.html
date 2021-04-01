@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html class="page" lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Academy: Седона</title>
+  </head>
+  <body class="body-page">
+    <header class="header-main">
+      <a class="logo" href="index.html">
+        <img class="logo__image" src="img/logotype-sedona.svg" width="102" height="84" alt="Логотип бренда Sedona"/>
+      </a>
+      <nav class="navigation-main">
+        <button class="navigation-main__toggle">
+          <span class="hidden">Кнопка-гамбургер, открывает меню</span>
+        </button>
+        <div class="navigation-main__wrapper">
+          <ul class="navigation-main__list">
+            <li class="navigation-main__item">
+              <a class="navigation-main__link" href="index.html">Главная</a>
+            </li>
+            <li class="navigation-main__item">
+              <a class="navigation-main__link">Фото и видео</a>
+            </li>
+            <li class="navigation-main__item">
+              <a class="navigation-main__link" href="form.html">Форма отзыва</a>
+            </li>
+            <li class="navigation-main__item">
+              <a class="navigation-main__link" href="https://htmlacademy.ru/intensive/htmlcss">Htmlacademy</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <main class="page-body__main">
+      <h1 class="heading hidden">Фото и видео</h1>
+      <section class="description">
+        <h2 class="hidden">Туристический бренд Седона приглашает в путешествие</h2>
+        <div class="description__wrapper--image">
+          <img class="description__image description__image--full" src="img/image-full.jpg" width="901" height="389" alt="Фотография гор на фоне неба"/>
+        </div>
+        <!--не забыть в стилях псевдоэлемент ::after белые треугольники, это декоративное изображение-->
+      </section>
+      <section class="content">
+        <ul class="content__list-media list-media">
+          <li class="list-media__item">
+            <img class="list-media__photo" src="img/photo-1-mobile.jpg" width="280" height="280" alt="Дорога, уходящая в закат"/>
+            <h3 class="list-media__heading">Неродные просторы</h3>
+            <p class="list-media__author">Автор фото: Борис</p>
+            <!--в стайлгайде нет стилей для лайка. Может просто картинка. Пользователи на сайте не авторизуются. Но пусть будет возможность ставить лайк. Картинка пойдёт в фон.-->
+            <button class="list-media__button-like button-like"><span class="hidden">Поставить лайк</span></button>
+            <p class="list-media__likes-quality">1350</p>
+          </li>
+          <li class="list-media__item">
+            <img class="list-media__photo" src="img/photo-2-mobile.jpg" width="280" height="280" alt="Местный кустарник на фоне гор"/>
+            <h3 class="list-media__heading">Местная растительность</h3>
+            <p class="list-media__author">Автор фото: Сергей</p>
+            <button class="list-media__button-like button-like"><span class="hidden">Поставить лайк</span></button>
+            <p class="list-media__likes-quality">143</p>
+          </li>
+          <li class="list-media__item">
+            <img class="list-media__photo" src="img/photo-3-mobile.jpg" width="280" height="280" alt="Горная дорога, окруженная зеленью"/>
+            <h3 class="list-media__heading">Дорога на север</h3>
+            <p class="list-media__author">Автор фото: Петр</p>
+            <button class="list-media__button-like button-like"><span class="hidden">Поставить лайк</span></button>
+            <p class="list-media__likes-quality">96</p>
+          </li>
+          <li class="list-media__item">
+            <img class="list-media__photo" src="img/photo-4-desktop1.jpg" width="280" height="280" alt="Мост дьявола — узкий горный мостик, висящий над пропастью"/>
+            <h3 class="list-media__heading">Дорога на север</h3>
+            <p class="list-media__author">Автор фото: Петр</p>
+            <button class="list-media__button-like button-like"><span class="hidden">Поставить лайк</span></button>
+            <p class="list-media__likes-quality">96</p>
+          </li>
+          <li class="list-media__item presentation">
+            <p class="presentation__text-big">Все еще сомневаетесь?</p>
+            <p class="presentation__text-small">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!</p>
+            <video class="presentation__video" controls width="320" height="201" poster="img/video-mobile.jpg">
+              <source src="video.mp4" type="video/mp4">
+              <source src="video.ogv" type="video/ogg">
+              <source src="video.webm" type="video/webm">
+            </video>
+            <div class="range-volume">
+              <!--согласно макету, это volume — громкость. А кажется, что это должна быть прокрутка видео по времени.-->
+              <div class="range-volume__line"></div>
+              <div class="range-volume__circle"></div>
+            </div>
+            <div class="player-menu">
+              <!--картинки будут в фоне кнопок-->
+              <button class="player-menu__button-replay button-replay">
+                <span class="hidden">Включить просмотр сначала</span>
+              </button>
+              <button class="player-menu__button-subtitles button-subtitles">
+                <span class="hidden">Включить субтитры</span>
+              </button>
+              <button class="player-menu__button-fullscreen button-fullscreen">
+                <span class="hidden">Включить полноэкранный режим</span>
+              </button>
+            </div>
+          </li>
+        </ul>
+      </section>
+    </main>
+    <footer class="footer-main">
+      <h2 class="hidden">Полезные ссылки</h2>
+      <p class="footer-main__hashtag hashtag"><span class="hidden">хеш-тег для социальных сетей #</span>visitsedona</p>
+      <ul class="footer-main__list-social list-social">
+        <li class="list-social__item">
+          <a class="list-social__link" href="#">
+            <img class="list-social__icon" src="img/icon-twitter.svg" width="18" height="15" alt="ссылка на twitter"/>
+          </a>
+        </li>
+        <li class="list-social__item">
+          <a class="list-social__link" href="#">
+            <img class="list-social__icon" src="img/icon-facebook.svg" width="18" height="15" alt="ссылка на facebook"/>
+          </a>
+        </li>
+        <li class="list-social__item">
+          <a class="list-social__link" href="#">
+            <img class="list-social__icon" src="img/icon-youtube.svg" width="18" height="15" alt="ссылка на youtube"/>
+          </a>
+        </li>
+      </ul>
+      <div class="footer-main__info-author info-author">
+        <p class="info-author__text">Разработано</p>
+        <a class="info-author__link-academy link-academy" href="https://htmlacademy.ru/intensive/htmlcss">
+          <img class="link-academy__logo-academy logo-academy" src="img/htmlacademy.svg" width="27" height="34" alt="Htmlacademy"/>
+        </a>
+      </div>
+    </footer>
+  </body>
+</html>
