@@ -1,0 +1,22 @@
+.list-reason {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.p-bold--white,
+.p-normal--white {
+  color: $basic-white;
+}
+
+.list-reason__wrapper {
+  text-align: center;
+}
+
+.list-reason__wrapper--blue {
+  background-color: $background-blue;
+}
+
+.list-reason__wrapper--grey {
+  background-color: $background-lightgrey;
+}

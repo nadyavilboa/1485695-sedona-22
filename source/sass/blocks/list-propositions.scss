@@ -1,0 +1,40 @@
+.list-propositions {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* Проблема */
+
+.list-propositions__item {
+  padding-left: 52px;
+  position: relative;
+}
+
+.list-propositions__item--house::before {
+  content: "";
+  background-image: url("../../img/icon-house.svg");
+  width: 39px;
+  height: 37px;
+  position: absolute;
+  left: 0;
+}
+
+.list-propositions__item--gift::before {
+  content: "";
+  background-image: url("../../img/icon-gift.svg");
+  width: 32px;
+  height: 38px;
+  position: absolute;
+  left: 0;
+}
+
+.list-propositions__item--food::before {
+  content: "";
+  background-image: url("../../img/icon-burger.svg");
+  width: 39px;
+  height: 37px;
+  display: inline;
+  position: absolute;
+  left: 0;
+}
