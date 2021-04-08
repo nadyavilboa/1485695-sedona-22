@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
+    <link rel="stylesheet" href="css/style.css"/>
   </head>
   <body class="body-page">
     <header class="header-main">
@@ -35,7 +36,7 @@
       <h1 class="heading hidden">Фото и видео</h1>
       <section class="description">
         <h2 class="hidden">Туристический бренд Седона приглашает в путешествие</h2>
-        <div class="description__wrapper--image">
+        <div class="description__wrapper-image">
           <img class="description__image description__image--full" src="img/image-full.jpg" width="901" height="389" alt="Фотография гор на фоне неба"/>
         </div>
         <!--не забыть в стилях псевдоэлемент ::after белые треугольники, это декоративное изображение-->
@@ -47,7 +48,7 @@
             <h3 class="list-media__heading">Неродные просторы</h3>
             <p class="list-media__author">Автор фото: Борис</p>
             <!--в стайлгайде нет стилей для лайка. Может просто картинка. Пользователи на сайте не авторизуются. Но пусть будет возможность ставить лайк. Картинка пойдёт в фон.-->
-            <button class="list-media__button-like button-like"><span class="hidden">Поставить лайк</span></button>
+            <button class="list-media__button button-like"><span class="hidden">Поставить лайк</span></button>
             <p class="list-media__likes-quality">1350</p>
           </li>
           <li class="list-media__item">
@@ -86,13 +87,13 @@
             </div>
             <div class="player-menu">
               <!--картинки будут в фоне кнопок-->
-              <button class="player-menu__button-replay button-replay">
+              <button class="player-menu__button player-menu__button--replay">
                 <span class="hidden">Включить просмотр сначала</span>
               </button>
-              <button class="player-menu__button-subtitles button-subtitles">
+              <button class="player-menu__button player-menu__button--subtitles">
                 <span class="hidden">Включить субтитры</span>
               </button>
-              <button class="player-menu__button-fullscreen button-fullscreen">
+              <button class="player-menu__button player-menu__button--fullscreen">
                 <span class="hidden">Включить полноэкранный режим</span>
               </button>
             </div>
