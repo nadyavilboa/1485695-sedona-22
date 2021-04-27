@@ -1,3 +1,51 @@
+.description {
+  position: relative;
+}
+
+.description__wrapper-image--full {
+  position: relative;
+}
+
+.description__wrapper-image--full::after {
+  content: "";
+  width: 1200px;
+  height: 57px;
+  background-image: url("../img/intro-triangle.svg");
+  background-repeat: no-repeat;
+  overflow: hidden;
+  position: absolute;
+  display: block;
+  bottom: 4px;
+  z-index: 10;
+}
+
+.description__wrapper-image--text {
+  position: absolute;
+  top: 90px;
+  left: 18px;
+}
+
+.description__wrapper-text {
+  padding: 32px 18px 11px 18px;
+}
+
+.description__wrapper-text::after {
+  content: "";
+  width: 768px;
+  height: 37px;
+  background-image: url("../img/white_block.svg");
+  background-repeat: no-repeat;
+  overflow: hidden;
+  position: absolute;
+  display: block;
+  bottom: -37px;
+  left: 0;
+  z-index: 10;
+}
+
 .description__text {
+  &--heading {
+    margin-bottom: 26px;
+  }
   text-align: center;
 }

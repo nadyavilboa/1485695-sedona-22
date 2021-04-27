@@ -1,0 +1,52 @@
+.content {
+  width: 100%;
+}
+
+.content__description {
+  border-bottom: 1px solid $border-grey;
+}
+
+.p-bold--head,
+.p-normal--content {
+  text-align: center;
+  font-size: 18px;
+  line-height: 26px;
+}
+
+.content__list-media {
+  list-style: none;
+  margin: 0 auto;
+}
+
+.list-media {
+  padding: 0 20px;
+}
+
+.list-media__item:not(:last-child) {
+  border-bottom: 1px solid $border-grey;
+  margin-top: 22px;
+}
+
+.list-media__text {
+  font-size: 14px;
+  line-height: 42px;
+  margin: 0;
+  margin-bottom: -10px;
+  padding: 0;
+}
+
+.list-media__like {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.button-like {
+  width: 23px;
+  height: 21px;
+  background-image: url("../img/like-icon.svg");
+  background-repeat: no-repeat;
+  background-color: $basic-white;
+  border: none;
+  margin-right: 14px;
+}
