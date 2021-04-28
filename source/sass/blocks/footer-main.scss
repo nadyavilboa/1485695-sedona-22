@@ -1,1 +1,98 @@
 /* подвал */
+
+.footer-main {
+  width: 320px;
+  padding: 39px 78px 23px 76px;
+}
+
+.footer-main__wrapper {
+  width: 166px;
+  box-sizing: border-box;
+}
+
+.p-bold--hashtag {
+  text-align: center;
+  margin: 0;
+  margin-bottom: 34px;
+}
+
+.footer-main__list-social {
+  margin: 0;
+  margin-left: 8px;
+}
+
+.list-social {
+  list-style: none;
+  padding: 0;
+  display: flex;
+}
+
+.list-social__item {
+  width: max-content;
+  height: max-content;
+  margin: 0;
+  margin-right: 6px;
+}
+
+.list-social__link {
+  position: relative;
+}
+
+.social-svg {
+  position: relative;
+}
+
+.social-svg__rect {
+  fill: $background-blue;
+}
+
+.list-social__link:hover .social-svg__rect {
+  fill: $social-hover;
+}
+
+.list-social__link:focus .social-svg__rect {
+  fill: $social-focus;
+}
+
+.list-social__icon {
+  &--facebook {
+    top: -130%;
+  }
+  position: absolute;
+  display: block;
+  z-index: 5;
+  top: -60%;
+  left: 30%;
+}
+
+.list-social__link:focus .list-social__icon {
+  opacity: 0.3;
+}
+
+.info-author {
+  display: flex;
+  align-items: center;
+  margin-top: 40px;
+  margin-left: 8px;
+  padding: 0;
+}
+
+.p-normal--author {
+  width: 110px;
+  box-sizing: border-box;
+  text-align: center;
+  margin: 0;
+}
+
+.link-academy {
+  display: block;
+}
+
+.link-academy:hover .logo-academy__path {
+  fill: $background-blue;
+}
+
+.link-academy:focus .logo-academy__path {
+  fill: $text-black;
+  opacity: 0.3;
+}

@@ -1,0 +1,32 @@
+.form-review__fieldset {
+  border: none;
+  margin-top: 20px;
+}
+
+.form-review__list {
+  list-style: none;
+  margin: 0;
+  padding: 20px 0 25px;
+  border-bottom: 1px solid $button-disabled;
+}
+
+.form-review__item {
+  display: flex;
+  align-items: center;
+}
+
+.form-review__item:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+.user-name__label {
+  margin-right: 14px;
+}
+
+.p-bold--input {
+  background-color: $input-background;
+  padding: 18px 14px 22px;
+  text-transform: none;
+  color: $text-black;
+  border: none;
+}

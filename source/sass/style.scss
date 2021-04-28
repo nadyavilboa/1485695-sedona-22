@@ -1,16 +1,20 @@
 /* Global */
 
-@import "../sass/global/fonts.scss";
-@import "../sass/global/variables.scss";
-@import "../sass/global/global.scss";
+@import "global/fonts.scss";
+@import "global/variables.scss";
+@import "global/global.scss";
 
 /* Blocks */
 
-@import "../sass/blocks/body-page.scss";
-@import "../sass/blocks/header-main.scss";
-@import "../sass/blocks/navigation-main.scss";
-@import "../sass/blocks/description.scss";
-@import "../sass/blocks/advantages.scss";
-@import "../sass/blocks/list-reason.scss";
-@import "../sass/blocks/list-propositions.scss";
-@import "../sass/blocks/offer-hotel.scss";
+@import "blocks/body-page.scss";
+@import "blocks/header-main.scss";
+@import "blocks/navigation-main.scss";
+@import "blocks/description.scss";
+@import "blocks/advantages.scss";
+@import "blocks/list-reason.scss";
+@import "blocks/list-propositions.scss";
+@import "blocks/offer-hotel.scss";
+@import "blocks/footer-main.scss";
+@import "blocks/content.scss";
+@import "blocks/review.scss";
+@import "blocks/form-review.scss";

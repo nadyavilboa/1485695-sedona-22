@@ -11,50 +11,54 @@
         <img class="logo__image" src="img/logotype-sedona.svg" width="102" height="84" alt="Логотип бренда Sedona"/>
       </a>
       <nav class="navigation-main">
-        <button class="navigation-main__toggle">
-          <span class="hidden">Кнопка-гамбургер, открывает меню</span>
+        <ul class="navigation-main__list">
+          <li class="navigation-main__item">
+            <a class="navigation-main__link navigation-main__link--current">Главная</a>
+          </li>
+          <li class="navigation-main__item">
+            <a class="navigation-main__link" href="catalog.html">Фото и видео</a>
+          </li>
+          <li class="navigation-main__item">
+            <a class="navigation-main__link" href="form.html">Форма отзыва</a>
+          </li>
+          <li class="navigation-main__item">
+            <a class="navigation-main__link" href="https://htmlacademy.ru/intensive/htmlcss">Htmlacademy</a>
+          </li>
+        </ul>
+        <button class="navigation-main__close">
+          <span class="hidden">Закрыть меню</span>
         </button>
-        <div class="navigation-main__wrapper">
-          <ul class="navigation-main__list">
-            <li class="navigation-main__item">
-              <a class="navigation-main__link">Главная</a>
-            </li>
-            <li class="navigation-main__item">
-              <a class="navigation-main__link" href="catalog.html">Фото и видео</a>
-            </li>
-            <li class="navigation-main__item">
-              <a class="navigation-main__link" href="form.html">Форма отзыва</a>
-            </li>
-            <li class="navigation-main__item">
-              <a class="navigation-main__link" href="https://htmlacademy.ru/intensive/htmlcss">Htmlacademy</a>
-            </li>
-          </ul>
-        </div>
       </nav>
+      <button class="toggle">
+        <svg class="hamburger" width="23" height="22">
+          <rect class="hamburger__rect" width="23" height="4" x="0" y="0"/>
+          <rect class="hamburger__rect" width="23" height="4" x="0" y="9"/>
+          <rect class="hamburger__rect" width="23" height="4" x="0" y="18">
+        </svg>
+        <span class="hidden">Кнопка-гамбургер, открывает меню</span>
+      </button>
     </header>
     <main class="body-page__main">
       <h1 class="heading hidden">Туристический город Седона</h1>
       <section class="description">
         <h2 class="hidden">Туристический бренд Седона приглашает в путешествие</h2>
-        <div class="description__wrapper-image">
-          <img class="description__image description__image--full" src="img/image-full.jpg" width="901" height="389" alt="Фотография гор на фоне неба"/>
+        <div class="description__wrapper-image description__wrapper-image--full">
+          <img class="description__image description__image--full" src="img/image-full.jpg" width="320" height="389" alt="Фотография гор на фоне неба"/>
         </div>
-        <div class="description__wrapper-image">
+        <div class="description__wrapper-image description__wrapper-image--text">
           <img class="description__image description__image--text" src="img/text-index.svg" width="282" height="214" alt="Welcome to the gordeous sedona. Becouse the grand canyon sucks!"/>
         </div>
-        <!--не забыть в стилях псевдоэлемент ::after белые треугольники, это декоративное изображение-->
         <div class="description__wrapper-text">
-          <p class="description__text p-bold">Седона — небольшой городок в Аризоне, заслуживающий большего!</p>
+          <p class="description__text description__text--heading p-bold">Седона — небольшой городок в Аризоне, заслуживающий большего!</p>
           <p class="description__text p-normal">Рассмотрим 5 причин, по которым Седона круче, чем Гранд каньон!</p>
         </div>
-        <!--не забыть в стилях псевдоэлемент ::after белое фоновое треугольное декоративное изображение-->
       </section>
       <section class="advantages">
         <h2 class="hidden">Причины поехать в город Седона</h2>
         <ul class="advantages__list-reason list-reason">
           <li class="list-reason__item">
             <div class="list-reason__wrapper list-reason__wrapper--blue">
-              <p class="list-reason__title p-bold p-bold--white">Настоящий городок</p>
+              <p class="list-reason__title list-reason__title--margin p-bold p-bold--white">Настоящий городок</p>
               <p class="list-reason__number p-normal p-normal--white">— №1 —</p>
               <p class="list-reason__text p-normal p-normal--white">Седона не аттракцион для туристов, там течет своя жизнь</p>
             </div>
@@ -63,19 +67,16 @@
             </div>
             <ul class="list-propositions">
               <li class="list-propositions__item list-propositions__item--house">
-                <!--не забыть в стилях псевдоэлемент ::before с картинкой-->
                 <p class="list-propositions__text p-bold">Жильё</p>
                 <p class="list-propositions__text p-normal">Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
               </li>
               <li class="list-propositions__item list-propositions__item--gift">
-                <!--не забыть в стилях псевдоэлемент ::before с картинкой-->
                 <p class="list-propositions__text p-bold">Сувениры</p>
                 <p class="list-propositions__text p-normal">Не только китайского, но и местного производства!</p>
               </li>
               <li class="list-propositions__item list-propositions__item--food">
-                <!--не забыть в стилях псевдоэлемент ::before с картинкой-->
                 <p class="list-propositions__text p-bold">Еда</p>
-                <p class="list-propositions__text p-normal">Всегда заказывайте ФИРМЕННЫЙ БУРГЕР, Вы НЕ разочаруетесь!</p>
+                <p class="list-propositions__text p-normal">Всегда заказывайте фирменный бургер, Вы не разочаруетесь!</p>
               </li>
             </ul>
           </li>
@@ -83,27 +84,27 @@
             <div class="list-reason__wrapper list-reason__wrapper--blue">
               <p class="list-reason__title p-bold p-bold--white">Там есть мост дьявола</p>
               <p class="list-reason__number p-normal p-normal--white">— №2 —</p>
-              <p class="list-reason__text p-normal--white">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
+              <p class="list-reason__text p-normal p-normal--white">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
             </div>
             <div class="list-reason__image__wrapper">
               <img class="list-reason__image" src="img/photo-bridge.jpg" width="520" height="260" alt="Естественный горный мост над пропастью"/>
             </div>
           </li>
-          <li class="list-reason__item">
+          <li class="list-reason__item list-reason__item--grey">
             <div class="list-reason__wrapper list-reason__wrapper--grey">
               <p class="list-reason__title p-bold">Небольшая площадь</p>
               <p class="list-reason__number p-normal">— №3 —</p>
               <p class="list-reason__text p-normal">Все интересные места находятся очень близко</p>
             </div>
           </li>
-          <li class="list-reason__item">
+          <li class="list-reason__item list-reason__item--grey">
             <div class="list-reason__wrapper list-reason__wrapper--grey">
               <p class="list-reason__title p-bold">Красивая дорога</p>
               <p class="list-reason__number p-normal">— №4 —</p>
               <p class="list-reason__text p-normal">Ехать в Седону из Лас-вегаса совсем не скучно!</p>
             </div>
           </li>
-          <li class="list-reason__item">
+          <li class="list-reason__item list-reason__item--grey">
             <div class="list-reason__wrapper list-reason__wrapper--grey">
               <p class="list-reason__title p-bold">Мало туристов</p>
               <p class="list-reason__number p-normal">— №5 —</p>
@@ -116,7 +117,7 @@
         <h2 class="hidden">Предложение выбрать гостиницу</h2>
         <p class="offer-hotel__text p-bold p-bold--hotel">Заинтересовались?</p>
         <p class="offer-hotel__text p-normal p-normal--hotel">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
-        <a class="offer-hotel__link" href="#">Найти гостиницу</a>
+        <a class="offer-hotel__link button-blue" href="#">Найти гостиницу</a>
       </section>
       <section class="map">
         <h2 class="hidden">Карта местности</h2>
@@ -126,30 +127,44 @@
       </section>
     </main>
     <footer class="footer-main">
-      <h2 class="hidden">Полезные ссылки</h2>
-      <p class="footer-main__hashtag p-bold p-bold--hashtag"><span class="hidden">хеш-тег для социальных сетей #</span>visitsedona</p>
-      <ul class="footer-main__list-social list-social">
-        <li class="list-social__item">
-          <a class="list-social__link" href="#">
-            <img class="list-social__icon" src="img/icon-twitter.svg" width="18" height="15" alt="ссылка на twitter"/>
+      <div class="footer-main__wrapper">
+        <h2 class="hidden">Полезные ссылки</h2>
+        <p class="footer-main__hashtag p-bold p-bold--hashtag"><span class="hidden">хеш-тег для социальных сетей </span>#visitsedona</p>
+        <ul class="footer-main__list-social list-social">
+          <li class="list-social__item">
+            <a class="list-social__link" href="#">
+              <svg class="social-svg" width="46" height="48">
+                <rect class="social-svg__rect" width="46" height="48" x="0" y="0"></rect>
+              </svg>
+              <img class="list-social__icon" src="img/icon-twitter.svg" width="18" height="15" alt="ссылка на twitter"/>
+            </a>
+          </li>
+          <li class="list-social__item">
+            <a class="list-social__link" href="#">
+              <svg class="social-svg" width="46" height="48">
+                <rect class="social-svg__rect" width="46" height="48" x="0" y="0"></rect>
+              </svg>
+              <img class="list-social__icon list-social__icon--facebook" src="img/icon-facebook.svg" width="18" height="15" alt="ссылка на facebook"/>
+            </a>
+          </li>
+          <li class="list-social__item">
+            <a class="list-social__link" href="#">
+              <svg class="social-svg" width="46" height="48">
+                <rect class="social-svg__rect" width="46" height="48" x="0" y="0"></rect>
+              </svg>
+              <img class="list-social__icon" src="img/icon-youtube.svg" width="18" height="15" alt="ссылка на youtube"/>
+            </a>
+          </li>
+        </ul>
+        <div class="footer-main__info-author info-author">
+          <p class="info-author__text p-normal p-normal--author">Разработано</p>
+          <a class="info-author__link-academy link-academy" href="https://htmlacademy.ru/intensive/htmlcss">
+            <svg class="link-academy__logo-academy logo-academy" width="27" height="34"  viewBox="0 0 27 35" fill="none">
+              <path class="logo-academy__path" d="M13.6 0H13.5L0 1.4V26.1L13.5 34.1L26.9 26.1V1.4L13.6 0ZM25 12.1L13.5 5.3V5.2H13.4L13.3 5.1V5.2L1.9 12.1V3.1L13.4 1.9L25 3.1V12.1ZM13.4 6.8L24.9 13.5L20.4 16.1L13.3 11.9V13.3L19.2 16.8L18.3 17.3L13.3 14.3V15.7L17.1 18L16.3 18.5L13.3 16.7V18.1L15.2 19.2L13.4 20.3L2 13.6L13.4 6.8ZM1.9 15.1L13.3 21.9V22.9L5.4 18.2V19.6L13.4 24.4V25.5L5.4 20.8V22.2L13.4 27L21.5 22.1V16.9L24.9 14.9V24.9L13.4 31.8L1.9 25V15.1Z" fill="black"/>
+            </svg>
+            <span class="hidden">Htmlacademy</span>
           </a>
-        </li>
-        <li class="list-social__item">
-          <a class="list-social__link" href="#">
-            <img class="list-social__icon" src="img/icon-facebook.svg" width="18" height="15" alt="ссылка на facebook"/>
-          </a>
-        </li>
-        <li class="list-social__item">
-          <a class="list-social__link" href="#">
-            <img class="list-social__icon" src="img/icon-youtube.svg" width="18" height="15" alt="ссылка на youtube"/>
-          </a>
-        </li>
-      </ul>
-      <div class="footer-main__info-author info-author">
-        <p class="info-author__text p-normal p-normal--author">Разработано</p>
-        <a class="info-author__link-academy link-academy" href="https://htmlacademy.ru/intensive/htmlcss">
-          <img class="link-academy__logo-academy logo-academy" src="img/htmlacademy.svg" width="27" height="34" alt="Htmlacademy"/>
-        </a>
+        </div>
       </div>
     </footer>
   </body>
