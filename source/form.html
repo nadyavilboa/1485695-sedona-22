@@ -86,19 +86,19 @@
             </ul>
           </fieldset>
           <fieldset class="form-review__fieldset form-review__user-emotion user-emotion">
-            <legend class="form-review__legend  p-bold p-bold--head">Ваше общее впечатление:</legend>
+            <legend class="form-review__legend p-bold p-bold--head">Ваше общее впечатление:</legend>
             <ul class="form-review__list user-emotion__list">
               <li class="user-emotion__item">
-                <input class="user-emotion__input" type="radio" name="positive-emotion" value="positive" id="user-positive" checked/>
-                <label class="user-emotion__label" for="user-positive">Скорее положительное</label>
+                <input class="user-emotion__input hidden" type="radio" name="positive-emotion" value="positive" id="user-positive" checked/>
+                <label class="user-emotion__label p-bold p-bold--head" for="user-positive">Скорее положительное</label>
               </li>
               <li class="user-emotion__item">
-                <input class="user-emotion__input" type="radio" name="negative-emotion" value="negative" id="user-negative"/>
-                <label class="user-emotion__label" for="user-negative">Скорее отрицательное</label>
+                <input class="user-emotion__input hidden" type="radio" name="negative-emotion" value="negative" id="user-negative"/>
+                <label class="user-emotion__label p-bold p-bold--head" for="user-negative">Скорее отрицательное</label>
               </li>
               <li class="user-emotion__item">
-                <input class="user-emotion__input" type="radio" name="hesistant-emotion" value="hesistant" id="user-hesistant"/>
-                <label class="user-emotion__label" for="user-hesistant">Затрудняюсь ответить</label>
+                <input class="user-emotion__input hidden" type="radio" name="hesistant-emotion" value="hesistant" id="user-hesistant"/>
+                <label class="user-emotion__label p-bold p-bold--head" for="user-hesistant">Затрудняюсь ответить</label>
               </li>
             </ul>
           </fieldset>
@@ -106,27 +106,27 @@
             <legend class="form-review__legend  p-bold p-bold--head">Посещенные достопримечательности:</legend>
             <ul class="form-review__list user-visited__list">
               <li class="user-visited__item">
-                <input class="user-visited__input" type="checkbox" name="bridge" value="devil-bridge" id="visited-bridge" checked/>
-                <label class="user-visited__label" for="visited-bridge">Мост Дьявола</label>
+                <input class="user-visited__input hidden" type="checkbox" name="bridge" value="devil-bridge" id="visited-bridge" checked/>
+                <label class="user-visited__label p-bold p-bold--head" for="visited-bridge">Мост Дьявола</label>
               </li>
               <li class="user-visited__item">
-                <input class="user-visited__input" type="checkbox" name="mountain" value="mountain-bell" id="visited-mountain" checked/>
-                <label class="user-visited__label" for="visited-mountain">Гора-Колокол</label>
+                <input class="user-visited__input hidden" type="checkbox" name="mountain" value="mountain-bell" id="visited-mountain" checked/>
+                <label class="user-visited__label p-bold p-bold--head" for="visited-mountain">Гора-Колокол</label>
               </li>
               <li class="user-visited__item">
-                <input class="user-visited__input" type="checkbox" name="park" value="slide-park" id="visited-park" checked/>
-                <label class="user-visited__label" for="visited-park">Слайд-парк</label>
+                <input class="user-visited__input hidden" type="checkbox" name="park" value="slide-park" id="visited-park" checked/>
+                <label class="user-visited__label p-bold p-bold--head" for="visited-park">Слайд-парк</label>
               </li>
               <li class="user-visited__item">
-                <input class="user-visited__input" type="checkbox" name="rocks" value="red-rocks" id="visited-rocks"/>
-                <label class="user-visited__label" for="visited-rocks">Красные скалы</label>
+                <input class="user-visited__input hidden" type="checkbox" name="rocks" value="red-rocks" id="visited-rocks"/>
+                <label class="user-visited__label p-bold p-bold--head" for="visited-rocks">Красные скалы</label>
               </li>
             </ul>
           </fieldset>
           <fieldset class="form-review__fieldset form-review__user-text user-text">
             <legend class="form-review__legend  p-bold p-bold--head">Опишите свои эмоции:</legend>
             <label class="user-text__label" for="text-review"></label>
-            <textarea class="user-text__textarea" id="text-review" name="user-text" form="your-review" placeholder="Опишите подробно все свои восторги"></textarea>
+            <textarea class="user-text__textarea p-bold p-bold--head" id="text-review" name="user-text" form="your-review" placeholder="Опишите подробно все свои восторги" rows="4"></textarea>
           </fieldset>
           <button type="submit" class="form-review__submit button-blue">
             <span>Отправить отзыв</span>

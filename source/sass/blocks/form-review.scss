@@ -1,6 +1,20 @@
+.form-review {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  padding: 0 20px;
+}
+
 .form-review__fieldset {
   border: none;
+  margin: 0;
+  padding: 0;
   margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.form-review__legend {
+  margin-bottom: 20px;
 }
 
 .form-review__list {
@@ -25,8 +39,88 @@
 
 .p-bold--input {
   background-color: $input-background;
-  padding: 18px 14px 22px;
+  padding: 18px 0 14px 22px;
   text-transform: none;
   color: $text-black;
   border: none;
+}
+
+.user-emotion__item:not(:last-child) {
+  margin: 0;
+  margin-bottom: 21px;
+}
+
+.user-visited__item:not(:last-child) {
+  margin: 0;
+  margin-bottom: 34px;
+}
+
+.user-emotion__label,
+.user-visited__label {
+  text-transform: initial;
+  position: relative;
+}
+
+.user-emotion__label::before {
+  content: "";
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background-color: $input-background;
+  border: 5px solid $input-background;
+  margin-right: 26px;
+  display: inline-block;
+}
+
+.user-emotion__item:hover ~ .user-emotion__label::before {
+  background-color: $button-disabled;
+}
+
+.user-emotion__input:not(:checked) ~ .user-emotion__label::after {
+  display: none;
+}
+
+.user-emotion__input:checked ~ .user-emotion__label::after {
+  content: "";
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  background-color: $text-grey;
+  border: 3px solid $text-grey;
+  position: absolute;
+  left: 18px;
+  top: -22px;
+  opacity: 1;
+}
+
+.user-visited__label::before {
+  content: "";
+  width: 46px;
+  height: 46px;
+  background-color: $input-background;
+  border: 5px solid $input-background;
+  margin-right: 29px;
+  display: inline-block;
+}
+
+.user-visited__label::after {
+  content: "";
+  width: 23px;
+  height: 16px;
+  background-image: url("../img/tick.svg");
+  background-repeat: no-repeat;
+  opacity: 0;
+  position: absolute;
+  left: 15px;
+  top: -15px;
+}
+
+.user-visited__input:checked ~ .user-visited__label::after {
+  opacity: 1;
+}
+
+.user-text__textarea {
+  margin-bottom: 51px;
+  padding: 13px 23px 29px 21px;
+  text-transform: initial;
 }

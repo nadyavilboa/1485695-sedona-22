@@ -1,7 +1,8 @@
 .review {
   display: grid;
+  grid-template-columns: 320px;
   margin: 0 auto;
-  max-width: 100%;
+  max-width: 320px;
 }
 
 .review__heading {
@@ -9,6 +10,8 @@
   margin-top: 36px;
   margin-bottom: 26px;
   text-align: center;
+  grid-column-start: 1;
+  grid-column-end: 2;
 }
 
 .review__text {
